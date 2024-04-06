@@ -1,0 +1,16 @@
+.content{
+    outline: 2px solid rgb(0, 221, 184);
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    width: auto;
+    /* overflow-y: auto; */
+}
+.panel{
+    font-size: 20px;
+    outline: 2px solid rgb(0, 221, 184);
+    width: fit-content;
+    padding: 20px;
+    /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5); */
+}

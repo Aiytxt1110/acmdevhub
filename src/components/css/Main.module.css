@@ -1,0 +1,105 @@
+#signout{
+    bottom: 0;
+}
+.container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  outline: 2px solid red;
+  margin: 0;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.navbar{
+    /* outline: 2px solid red; */
+    font-size: 20px;
+    width: 90px;
+    /* position: fixed; */
+    background-color: #fff;
+    border-radius: 20px;
+    /* margin: 10px; */
+    /* box-shadow: 0 0 20px #000; */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+    z-index: 99;
+}
+.content{
+  position: relative;
+  outline: 2px solid red;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.noti{
+    position: absolute;
+    font-size: 9px;
+    top: 0;
+    right: 22px;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border: 2px solid red;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 3px 0;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.statis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.item,.itemnoti{
+    list-style: none;
+    /* outline: 2px solid red; */
+    position: relative;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.8);
+    border: none;
+    background: none;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    /* display: inline-block; */
+    padding-top: 8px;
+}
+
+
+  .tipt {
+    pointer-events:none;
+    visibility: hidden;
+    width: 150px;
+    height: 60px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 100;
+    top: -5px;
+    left: 70px; 
+    opacity: 0;
+    transition: opacity 0.1s;
+    line-height: 50px;
+  }.item:hover .tipt {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.footernav{
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
